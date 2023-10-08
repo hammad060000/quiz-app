@@ -1,0 +1,379 @@
+.sec1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.heading {
+    text-align: center;
+    font-size: 35px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #000;
+    padding-left: 5px;
+}
+
+button.learn-more {
+    width: 12rem;
+    height: auto;
+}
+
+@import "compass/css3";
+.trapdoor {
+    -webkit-transform: translateZ(0px);
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -25px;
+    width: 200px;
+    height: 50px;
+    box-shadow: inset -7px 0px 12px -8px rgba(0, 0, 0, 0.3), inset 7px 0px 12px -8px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
+    -webkit-transition: background 400ms ease-in-out;
+    -moz-transition: background 400ms ease-in-out;
+    -ms-transition: background 400ms ease-in-out;
+    -o-transition: background 400ms ease-in-out;
+    transition: background 400ms ease-in-out;
+    &:hover {
+        background: #fff;
+        .door {
+            box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.4);
+            -webkit-transform: scale(1.08);
+            -moz-transform: scale(1.08);
+            -ms-transform: scale(1.08);
+            -o-transform: scale(1.08);
+            transform: scale(1.08);
+        }
+        .top {
+            top: -50%;
+        }
+        .bottom {
+            top: 100%;
+        }
+    }
+    .twitter-follow-button {
+        margin-left: -77px;
+        position: absolute !important;
+        margin-top: -14px;
+        left: 50%;
+        top: 50%;
+    }
+}
+
+.top {
+    top: 0%;
+    left: 0px;
+    &:before {
+        top: 5px;
+    }
+}
+
+.bottom {
+    top: 50%;
+    left: 0px;
+    &:before {
+        top: -20px;
+    }
+}
+
+.door {
+    -webkit-transition: top 400ms, box-shadow 200ms, -webkit-transform 300ms;
+    -moz-transition: top 400ms, box-shadow 200ms, -moz-transform 300ms;
+    -ms-transition: top 400ms, box-shadow 200ms, -ms-transform 300ms;
+    -o-transition: top 400ms, box-shadow 200ms, -o-transform 300ms;
+    transition: top 400ms, box-shadow 200ms, transform 300ms;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    background-color: #fff;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    z-index: 2;
+    height: 50%;
+    &:before {
+        font-family: 'tweet', sans-serif;
+        position: absolute;
+        margin-left: -20px;
+        font-size: 35px;
+        display: block;
+        color: #4099FF;
+        content: "\e000";
+        width: 0px;
+        height: 20px;
+        left: 52%;
+    }
+}
+
+@font-face {
+    font-family: 'tweet';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/277/tweet.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#login,
+#quize {
+    display: none;
+}
+
+#em {
+    display: none;
+}
+
+#resuldata {
+    display: none;
+}
+
+body {
+    overflow: hidden;
+}
+
+#for {
+    display: flex;
+    margin-left: 0px;
+    width: 50%;
+    justify-content: space-between;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#em2 {
+    display: none;
+}
+
+#container2 {
+    display: none;
+    background-color: aqua;
+}
+
+#main {
+    margin-top: 0px;
+}
+
+
+/* .Login{
+    margin-top: 20px;
+} */
+
+#btn {
+    margin-bottom: 5px;
+    color: white;
+    width: 10%;
+}
+
+
+/* #container2{
+    display: flex;
+    justify-content: center;
+} */
+
+#forgetPassword {
+    display: none;
+}
+
+input {
+    color: #000 !important;
+}
+
+.main,
+#Login,
+#Rigister,
+.second,
+#forgetPassword {
+    overflow: hidden;
+}
+
+#inputmain {
+    margin-left: 27%;
+    position: relative;
+}
+
+#iconePassword {
+    position: absolute;
+    /* top: 242px; */
+    bottom: 48px;
+    transform: translateY(-50%);
+}
+
+#iconeEmail {
+    position: absolute;
+    bottom: 135px;
+    transform: translateY(-50%);
+}
+
+#iconeEmail2 {
+    position: absolute;
+    bottom: 178px;
+    transform: translateY(-50%);
+}
+
+#iconeEmail3 {
+    position: absolute;
+    bottom: 44px;
+    transform: translateY(-50%);
+}
+
+#iconeuser {
+    position: absolute;
+    bottom: 68px;
+    transform: translateY(-50%);
+}
+
+#iconeusermain {
+    position: absolute;
+    bottom: 112px;
+    transform: translateY(-50%);
+}
+
+input {
+    padding-left: 20px;
+}
+
+#changepage,
+#fore {
+    text-decoration: none;
+}
+
+#Rigister {
+    display: none;
+    transform: 2s;
+}
+
+#Login,
+#Rigister {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#inputmain {
+    /* margin: auto; */
+    margin-top: 140px;
+}
+
+.loginBtn {
+    margin-top: 0px;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.justify-content-center {
+    width: 100%;
+    flex-direction: column;
+}
+
+#userNameGet,
+#emailGet,
+#userNumber,
+#userPasword,
+#userPaswordSend,
+#emailSend,
+#emailSend3 {
+    background-color: transparent;
+    margin-top: 40px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    align-items: center;
+    width: 50%;
+}
+
+img {
+    max-width: 100%;
+    /* max-height: 100%; */
+}
+
+.icons,
+.icons2 {
+    display: flex;
+}
+
+.icons i,
+.icons2 i {
+    margin-top: 5px;
+}
+
+.icons p,
+.icons2 p {
+    margin-left: 8px;
+}
+
+.main {
+    display: none;
+}
+
+@media screen and (max-width:372px) {
+    /* #inputmain{
+        margin-left: 5%;
+} */
+}
+
+@media screen and (max-width:771px) {
+    #btn {
+        margin-bottom: 5px;
+        color: white;
+        width: 20%;
+    }
+    #container {
+        /* margin-top: 70px; */
+    }
+}
+
+@media screen and (max-width:481px) {
+    #userNameGet,
+    #emailGet,
+    #userNumber,
+    #userPasword,
+    #userPaswordSend,
+    #emailSend {
+        width: 80%;
+        margin-right: 5px;
+    }
+    #changepage {
+        margin-left: 200px;
+    }
+    #inputmain {
+        margin-left: 15%;
+    }
+    #container {
+        /* margin-top: 60px; */
+    }
+}
+
+@media screen and (max-width:393px) {
+    #changepage {
+        margin-left: 180px;
+    }
+    #btn {
+        margin-bottom: 5px;
+        color: white;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:353px) {
+    #changepage {
+        margin-left: 150px;
+    }
+    #container {
+        /* margin-top: 50px; */
+    }
+}
